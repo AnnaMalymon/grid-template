@@ -2,11 +2,10 @@
   position: relative;
 
   &__title {
-    
     letter-spacing: 0.08em;
     text-align: center;
 
-   @include lg-min {
+    @include lg-min {
       margin: 0 0 53px;
     }
 
@@ -19,8 +18,8 @@
     display: flex;
     justify-content: center;
 
-     .btn:first-of-type {
-       margin-right: 20px;
+    .btn:first-of-type {
+      margin-right: 20px;
     }
   }
 }
