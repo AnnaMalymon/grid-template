@@ -1,0 +1,15 @@
+temp/
+*.bat
+
+# IntellijIdea files
+.idea/
+*/scss-comb/
+
+node_modules/
+libs/
+samples/
+
+assets/img/*.png
+
+.yarnrc
+prepros-6.config
