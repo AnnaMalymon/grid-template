@@ -9,7 +9,7 @@ node_modules/
 libs/
 samples/
 
-assets/img/*.png
+assets/img/
 
 .yarnrc
 prepros-6.config
