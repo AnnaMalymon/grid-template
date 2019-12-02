@@ -44,10 +44,21 @@
   border: 0;
 }
 
-@mixin abs-position  {
+@mixin abs-position {
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
+}
+
+@mixin container-center {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+@mixin form {
+  height: 60px;
+  background-color: rgba($color-gray, 0.25);
+  padding-left: 35px;
 }

@@ -53,53 +53,66 @@
   &:nth-of-type(9) {
     grid-area: a9;
   }
-  
-  &__overlay {
-  background-color: $color-primary;
-  opacity: 0.8;
-  z-index: 1;
-  transition: opacity 0.5s;
 
-  @include abs-position;
-}
+  &__overlay {
+    background-color: $color-primary;
+    opacity: 0.8;
+    z-index: 1;
+    transition: opacity 0.5s;
+
+    @include abs-position;
+  }
 
   &__image {
-  background-size: cover;
-  background-position: 50% 50%;
-  transition: transform 0.5s;
+    background-size: cover;
+    background-position: 50% 50%;
+    transition: transform 0.5s;
 
-  @include abs-position;
-}
+    @include abs-position;
+  }
 
   &__title {
-  margin: 0;
-  z-index: 2;
+    margin: 0;
+    z-index: 2;
 
-  @include abs-position;
-}
+    @include abs-position;
+  }
 
   &__link {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  justify-content: center;
-  align-items: center;
-  transition: color 0.5s;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    transition: color 0.5s;
   }
-  
+
   &:hover {
     .skill-item__overlay {
-    opacity: 0.95 !important;
+      opacity: 0.95 !important;
     }
 
     .skill-item__image {
-    transform: scale(1.1);
+      transform: scale(1.1);
     }
 
     .skill-item__link {
-    color: $color-accent;
+      color: $color-accent;
     }
   }
 }
+.skills__button {
+  grid-column: 1 / 5;
+  padding: $gap 0 ($gap * 2);
 
-
+  .btn {
+    margin: auto;
+    background-color: rgba($color-primary, 0.8);
+    max-width: 350px;
+    border-radius: 1px;
+    border: 2px solid $color-primary;
+    &:hover {
+      background-color: $color-accent;
+    }
+  }
+}

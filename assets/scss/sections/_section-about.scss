@@ -1,0 +1,34 @@
+.section-about {
+  background-color: $color-gray-light;
+  &__container {
+    @include container-center;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "lf lf rt";
+  }
+  &__left {
+    grid-area: lf;
+    position: relative;
+    &::after {
+      position: absolute;
+      top: 120px;
+      right: 0;
+      bottom: 150px;
+      width: 2px;
+      content: "";
+      background-color: rgba($color-gray, 0.25);
+    }
+
+    h2 {
+      padding-bottom: $gap;
+    }
+    p {
+      padding-right: 55px;
+    }
+  }
+  &__right {
+    grid-area: rt;
+    padding-left: 55px;
+  }
+}
